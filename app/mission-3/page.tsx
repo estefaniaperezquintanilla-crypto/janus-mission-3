@@ -1,10 +1,9 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 export default function Mission3OpeningPage() {
-  <audio ref={audioRef} src="/audio/mission3-theme.mp3" preload="auto" />
   const [phase, setPhase] = useState(0);
 
   useEffect(() => {
@@ -12,15 +11,7 @@ export default function Mission3OpeningPage() {
 
     timers.push(window.setTimeout(() => setPhase(1), 4000));
     timers.push(window.setTimeout(() => setPhase(2), 8000));
-    timers.push(
-      window.setTimeout(() => {
-        setPhase(3);
-        if (audioRef.current) {
-          audioRef.current.volume = 0.65;
-          audioRef.current.play().catch(() => {});
-        }
-      }, 10000)
-    );
+    timers.push(window.setTimeout(() => setPhase(3), 10000));
     timers.push(window.setTimeout(() => setPhase(4), 14000));
     timers.push(window.setTimeout(() => setPhase(5), 20000));
     timers.push(window.setTimeout(() => setPhase(6), 28000));
@@ -31,8 +22,6 @@ export default function Mission3OpeningPage() {
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-black text-[#f6f1e6]">
-      <audio ref={audioRef} src="/audio/mission3-theme.mp3" preload="auto" />
-
       <div
         className={`absolute inset-0 transition-opacity duration-[3000ms] ${
           phase >= 1 ? 'opacity-100' : 'opacity-0'
@@ -58,9 +47,13 @@ export default function Mission3OpeningPage() {
           >
             <div className="flex h-full w-full items-center justify-center">
               <div className="text-center leading-tight">
-                <div className="text-[11px] tracking-[0.35em] text-[#d4af37]">JANUS</div>
+                <div className="text-[11px] tracking-[0.35em] text-[#d4af37]">
+                  JANUS
+                </div>
                 <div className="mx-auto my-2 h-px w-10 bg-[#d4af37]" />
-                <div className="text-[10px] tracking-[0.25em] text-[#d4af37]">AUTHORIZED</div>
+                <div className="text-[10px] tracking-[0.25em] text-[#d4af37]">
+                  AUTHORIZED
+                </div>
               </div>
             </div>
           </div>
@@ -95,8 +88,14 @@ export default function Mission3OpeningPage() {
             }`}
           >
             <p>Some recipes can be prepared by anyone.</p>
-            <p>Others can only be executed when two agents operate in perfect synchronization.</p>
-            <p>One shared mission. One objective. One reward reserved for the agent who completes the protocol.</p>
+            <p>
+              Others can only be executed when two agents operate in perfect
+              synchronization.
+            </p>
+            <p>
+              One shared mission. One objective. One reward reserved for the
+              agent who completes the protocol.
+            </p>
           </div>
 
           <div
