@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 
 export default function Mission3OpeningPage() {
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  <audio ref={audioRef} src="/audio/mission3-theme.mp3" preload="auto" />
   const [phase, setPhase] = useState(0);
 
   useEffect(() => {
