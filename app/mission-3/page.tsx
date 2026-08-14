@@ -12,13 +12,15 @@ export default function Mission3OpeningPage() {
 
     timers.push(window.setTimeout(() => setPhase(1), 4000));
     timers.push(window.setTimeout(() => setPhase(2), 8000));
-    timers.push(window.setTimeout(() => {
-      setPhase(3);
-      if (audioRef.current) {
-        audioRef.current.volume = 0.65;
-        audioRef.current.play().catch(() => {});
-      }
-    }, 10000));
+    timers.push(
+      window.setTimeout(() => {
+        setPhase(3);
+        if (audioRef.current) {
+          audioRef.current.volume = 0.65;
+          audioRef.current.play().catch(() => {});
+        }
+      }, 10000)
+    );
     timers.push(window.setTimeout(() => setPhase(4), 14000));
     timers.push(window.setTimeout(() => setPhase(5), 20000));
     timers.push(window.setTimeout(() => setPhase(6), 28000));
@@ -39,7 +41,7 @@ export default function Mission3OpeningPage() {
           backgroundImage: 'url(/images/mission3/marble-bg.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          filter: 'brightness(0.18) contrast(1.15)',
+          filter: 'brightness(0.22) contrast(1.15)',
         }}
       />
 
@@ -48,7 +50,7 @@ export default function Mission3OpeningPage() {
       <div className="relative z-10 flex min-h-screen items-center justify-center px-6">
         <div className="mx-auto max-w-3xl text-center">
           <div
-            className={`mx-auto mb-8 h-32 w-32 rounded-full border transition-all duration-[2000ms] ${
+            className={`mx-auto mb-8 h-36 w-36 rounded-full border transition-all duration-[2000ms] ${
               phase >= 2
                 ? 'scale-100 opacity-100 border-[#d4af37] shadow-[0_0_50px_rgba(212,175,55,0.35)]'
                 : 'scale-90 opacity-0 border-transparent'
@@ -64,11 +66,19 @@ export default function Mission3OpeningPage() {
           </div>
 
           <div
-            className={`mb-4 text-sm uppercase tracking-[0.45em] text-[#d4af37] transition-all duration-1000 ${
+            className={`mb-2 text-sm uppercase tracking-[0.45em] text-[#d4af37] transition-all duration-1000 ${
               phase >= 3 ? 'translate-y-0 opacity-100' : 'translate-y-2 opacity-0'
             }`}
           >
             JANUS Culinary Division
+          </div>
+
+          <div
+            className={`mb-4 text-xs uppercase tracking-[0.55em] text-[#a88c32] transition-all duration-1000 ${
+              phase >= 3 ? 'translate-y-0 opacity-100' : 'translate-y-2 opacity-0'
+            }`}
+          >
+            WV-09 // CLASSIFIED DOSSIER
           </div>
 
           <h1
@@ -76,7 +86,7 @@ export default function Mission3OpeningPage() {
               phase >= 4 ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
           >
-            Operation: Three Milks
+            Operation White Velvet
           </h1>
 
           <div
@@ -84,9 +94,9 @@ export default function Mission3OpeningPage() {
               phase >= 5 ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
           >
-            <p>Existen recetas que cualquiera puede preparar.</p>
-            <p>Y existen recetas que solo pueden ejecutarse cuando dos agentes operan en perfecta sincronía.</p>
-            <p>Una misión compartida. Un objetivo único. Una recompensa reservada para quien complete el protocolo.</p>
+            <p>Some recipes can be prepared by anyone.</p>
+            <p>Others can only be executed when two agents operate in perfect synchronization.</p>
+            <p>One shared mission. One objective. One reward reserved for the agent who completes the protocol.</p>
           </div>
 
           <div
@@ -98,7 +108,7 @@ export default function Mission3OpeningPage() {
               href="/mission-3/briefing"
               className="inline-flex items-center rounded-full border border-[#d4af37] px-8 py-4 text-sm uppercase tracking-[0.35em] text-[#d4af37] transition hover:bg-[#d4af37] hover:text-black"
             >
-              Authorize Briefing
+              AUTHORIZE BRIEFING
             </Link>
           </div>
         </div>

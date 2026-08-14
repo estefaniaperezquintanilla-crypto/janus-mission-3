@@ -9,14 +9,20 @@ export default function Mission3FastTrackPage() {
           JANUS Culinary Division
         </div>
 
+        <div className="mb-3 text-xs uppercase tracking-[0.55em] text-[#a88c32]">
+          WV-09 // PROCUREMENT DOSSIER
+        </div>
+
         <h1 className="mb-4 text-4xl font-semibold md:text-6xl">
-          Fast Track Procurement
+          Infrastructure Phase
         </h1>
 
         <p className="mb-12 max-w-3xl text-lg leading-8 text-[#ddd6c8]">
-          Tiempo es un recurso operacional. El Director ha preseleccionado los
-          únicos elementos autorizados para ejecutar la operación. No es
-          necesario comparar opciones ni optimizar la compra: solo ejecutar.
+          The Procurement Unit has been decrypted. The Director has authorized
+          the acquisition of the infrastructure required to execute
+          <span className="text-[#f6f1e6] font-semibold"> Operation White Velvet</span>.
+          No comparison, optimization, or alternative selection is required.
+          Execute the acquisition protocol exactly as specified.
         </p>
 
         <div className="grid gap-8 md:grid-cols-2">
@@ -41,9 +47,9 @@ export default function Mission3FastTrackPage() {
               </h2>
 
               <p className="mb-6 text-[#ddd6c8]">
-                Unidad de mezcla aprobada por JANUS para lograr aireación
-                consistente del bizcocho y estabilidad durante el protocolo de
-                Tres Leches.
+                Authorized mixing unit required to establish the operational
+                capability of the infrastructure phase. Approved by the Director
+                for compatibility with WV-09 protocol requirements.
               </p>
 
               <div className="mb-6 flex items-center justify-between text-sm">
@@ -59,7 +65,7 @@ export default function Mission3FastTrackPage() {
                 rel="noreferrer"
                 className="inline-flex w-full items-center justify-center rounded-full border border-[#d4af37] px-6 py-3 text-sm uppercase tracking-[0.3em] text-[#d4af37] transition hover:bg-[#d4af37] hover:text-black"
               >
-                Acquire Mixer
+                Acquire Unit
               </a>
             </div>
           </section>
@@ -84,9 +90,8 @@ export default function Mission3FastTrackPage() {
               </h2>
 
               <p className="mb-6 text-[#ddd6c8]">
-                Molde estructural autorizado para garantizar expansión uniforme,
-                estabilidad del bizcocho y compatibilidad con el protocolo
-                operativo.
+                Structural mold approved for infrastructure deployment and
+                dimensional compliance with WV-09 operational parameters.
               </p>
 
               <div className="mb-6 flex items-center justify-between text-sm">
@@ -102,7 +107,7 @@ export default function Mission3FastTrackPage() {
                 rel="noreferrer"
                 className="inline-flex w-full items-center justify-center rounded-full border border-[#d4af37] px-6 py-3 text-sm uppercase tracking-[0.3em] text-[#d4af37] transition hover:bg-[#d4af37] hover:text-black"
               >
-                Acquire Cake Pan
+                Acquire Unit
               </a>
             </div>
           </section>
@@ -110,12 +115,19 @@ export default function Mission3FastTrackPage() {
 
         <div className="mt-12 rounded-3xl border border-[#3a3216] bg-[#15120a] p-6 text-[#ddd6c8]">
           <div className="mb-2 text-xs uppercase tracking-[0.35em] text-[#d4af37]">
-            Operational note
+            Shadow Provisioning
           </div>
+
+          <p className="mb-3 text-lg leading-8">
+            Shadow Provisioning has already begun.
+          </p>
+
           <p className="text-lg leading-8">
-            La Agente E ya ha iniciado la adquisición de ingredientes. Tu misión
-            es completar la infraestructura. Cuando ambos vectores converjan, el
-            Director autorizará la producción del objetivo final.
+            Agent E has initiated the classified provisioning sequence required
+            for
+            <span className="text-[#f6f1e6] font-semibold"> Operation White Velvet</span>.
+            Ingredient manifests remain encrypted until infrastructure readiness
+            is confirmed.
           </p>
         </div>
 

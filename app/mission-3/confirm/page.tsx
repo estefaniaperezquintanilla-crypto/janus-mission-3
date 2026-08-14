@@ -9,29 +9,38 @@ export default function Mission3ConfirmPage() {
             JANUS Culinary Division
           </div>
 
+          <div className="mb-3 text-xs uppercase tracking-[0.55em] text-[#a88c32]">
+            WV-09 // AUTHORIZATION DOSSIER
+          </div>
+
           <h1 className="mb-6 text-4xl font-semibold md:text-5xl">
             Mission Confirmation
           </h1>
 
           <div className="space-y-5 text-lg leading-8 text-[#ddd6c8]">
             <p>
-              Los elementos han sido identificados y la ruta de adquisición ha
-              sido autorizada.
+              The procurement dossier has been decrypted and the infrastructure
+              route has been authorized by the Director.
             </p>
 
             <p>
-              Al continuar, aceptas ejecutar la fase de infraestructura de
-              <span className="text-[#f6f1e6] font-semibold"> Operation: Three Milks</span>.
+              By proceeding, you formally accept the
+              <span className="text-[#f6f1e6] font-semibold"> Infrastructure Phase</span>
+              of
+              <span className="text-[#f6f1e6] font-semibold"> Operation White Velvet</span>.
             </p>
 
             <p>
-              Esta confirmación activa el protocolo compartido entre el Agente G
-              y la Agente E.
+              This confirmation activates the synchronized operational protocol
+              between
+              <span className="text-[#f6f1e6] font-semibold"> Agent G</span> and
+              <span className="text-[#f6f1e6] font-semibold"> Agent E</span>.
             </p>
 
             <p>
-              Una vez aceptada la misión, el Director registrará tu compromiso y
-              preparará la siguiente fase del expediente.
+              Once accepted, the Director will register your commitment and
+              initiate the final verification sequence for
+              <span className="text-[#f6f1e6] font-semibold"> WV-09</span>.
             </p>
           </div>
 
@@ -45,7 +54,12 @@ export default function Mission3ConfirmPage() {
             <div className="space-y-2 text-[#ddd6c8]">
               <div className="flex items-center justify-between">
                 <span>Operation</span>
-                <span className="text-[#f6f1e6]">Three Milks</span>
+                <span className="text-[#f6f1e6]">White Velvet</span>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <span>Protocol</span>
+                <span className="text-[#f6f1e6]">WV-09</span>
               </div>
 
               <div className="flex items-center justify-between">
@@ -72,7 +86,7 @@ export default function Mission3ConfirmPage() {
               href="/mission-3/validation"
               className="inline-flex items-center justify-center rounded-full border border-[#d4af37] px-8 py-3 text-sm uppercase tracking-[0.35em] text-[#d4af37] transition hover:bg-[#d4af37] hover:text-black"
             >
-              I Accept the Mission
+              I ACCEPT THE MISSION
             </Link>
           </div>
         </div>
